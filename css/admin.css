@@ -1,0 +1,5 @@
+button[disabled="disabled"].wp-switch-editor
+{
+    background-color: #ccc;
+    font-style: italic;
+}
