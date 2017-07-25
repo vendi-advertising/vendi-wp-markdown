@@ -4,6 +4,14 @@ use Michelf\Markdown;
 use Vendi\Shared\utils;
 use Vendi\WPMarkdown\settings;
 
+add_action(
+            'plugins_loaded',
+            function()
+            {
+                load_plugin_textdomain( 'vendi-wp-markdown', false, basename( VENDI_WP_MARKDOWN_PATH ) . '/languages' );
+            }
+        );
+
 //Create a checkbox that flags that this post supports markdown.
 add_action(
             'post_submitbox_misc_actions',
