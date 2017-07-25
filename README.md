@@ -93,6 +93,8 @@ First release
 ## Roadmap 
 Version 1 is the very simple proof of concept that just works.  It is intended to be used by people who know what Markdown is and when they should and shouldn't use it. Specifically it doesn't address multiple editors on a single page nor does it support widgets. There are also no global settings, just on and off per post/page.
 
+Version 2 might possibly add support for previewing Markdown and possibly converting HTML to Markdown via the [PHP League's awesome library](https://github.com/thephpleague/html-to-markdown). I'd also like to get WordPress's preview system working but that might be blocked by [this](https://core.trac.wordpress.org/ticket/20299) and/or [this](https://core.trac.wordpress.org/ticket/20564).
+
 
 
 ## Copyright and License 
