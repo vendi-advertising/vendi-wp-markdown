@@ -2,7 +2,7 @@
 /*
 Plugin Name: Vendi WP Markdown
 Description: Allows authors to write in Markdown.
-Version: 1.0
+Version: 1.0.0
 Author: Chris Haas
 Author URI: https://www.vendiadvertising.com/
 Text Domain: vendi-wp-markdown
