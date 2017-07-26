@@ -37,7 +37,14 @@ make_translation_file()
     fi
 
     printf "Creating translation files\n"
-    php ${LOCAL_WP_BUILD_DIR}/tools/i18n/makepot.php wp-plugin . languages/${PLUGIN_FOLDER}.pot
+    php ${LOCAL_WP_BUILD_DIR}/tools/i18n/makepot.php wp-plugin . ${PLUGIN_DIR}/languages/${PLUGIN_FOLDER}.pot
+
+    IS_REALLY_CHANGED=$(git diff --stat ${PLUGIN_DIR}/languages/${PLUGIN_FOLDER}.pot | grep "1 file changed, 1 insertion(+), 1 deletion")
+
+    if [ ! -z "$IS_REALLY_CHANGED" ]; then
+        printf "No translation changes found, reverting file\n"
+        git checkout ${PLUGIN_DIR}/languages/${PLUGIN_FOLDER}.pot
+    fi
 
     rm -rf ${LOCAL_WP_BUILD_DIR}
 }
