@@ -41,6 +41,6 @@ class settings
     public static function is_post_markdown_enabled( $post_or_id, $default = false )
     {
         $name = settings::get_name_enabled();
-        return settings::get_boolean_option( $post_id, $name, $default );
+        return settings::get_boolean_option( $post_or_id, $name, $default );
     }
 }
