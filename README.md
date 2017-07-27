@@ -2,7 +2,7 @@
 Plugin Name: Vendi WP Markdown
 **Contributors:** chrisvendiadvertisingcom  
 **Tags:** markdown, tinymce  
-Version: 1.0.0
+Version: 1.0.1
 Author: Chris Haas
 Author URI: https://www.vendiadvertising.com/
 **Requires at least:** 4.7  
@@ -84,6 +84,10 @@ Not at this time.
 
 
 ## Changelog 
+
+
+### 1.0.1 
+Renamed variable
 
 
 ### 1.0.0 
